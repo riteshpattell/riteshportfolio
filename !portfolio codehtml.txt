@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ritesh | Portfolio</title>
+  <style>
+    * {margin:0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: #0e0e0e; color: #fff; overflow-x: hidden;}
+    header {
+      background: #000; 
+      text-align: center; 
+      padding: 80px 20px; 
+      position: relative;
+    }
+    header img {
+      width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #fbbf24; margin-bottom: 15px;
+    }
+    header h1 {font-size: 3.5rem; color: #fff; letter-spacing: 2px;}
+    header h1 span {color: #fbbf24;}
+    header::after {
+      content: ""; position: absolute; top:0; left:0; width:100%; height:100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%) 0 0,
+                  linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%) 0 0;
+      background-size: 50px 50px; animation: animate 10s linear infinite;
+      z-index: 0; opacity: 0.2;
+    }
+    @keyframes animate { 0% {background-position: 0 0, 0 0;} 100% {background-position: 100px 100px, 100px 100px;} }
+
+    nav {display: flex; justify-content: center; gap: 30px; background: #0a0a0a; padding: 15px; position: sticky; top: 0; z-index: 10;}
+    nav a {color: #fbbf24; text-decoration: none; font-weight: 500;}
+
+    section {padding: 80px 20px; max-width: 1100px; margin: auto;}
+    .section-title {color: #fbbf24; font-size: 2.5rem; margin-bottom: 20px; text-transform: uppercase;}
+
+    .about {display: flex; flex-direction: column; align-items: center; text-align: center;}
+    .about img {border-radius: 50%; width: 150px; height: 150px; margin-bottom: 20px; border: 3px solid #fbbf24;}
+    .about h2 {font-size: 2rem; margin-bottom: 10px;}
+    .about p {max-width: 600px; line-height: 1.5; color: #bbb;}
+
+    .services {display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;}
+    .service-card {border: 2px solid #fbbf24; padding: 20px; text-align: center; border-radius: 8px;}
+    .service-card:hover {background: #fbbf24; color: #000;}
+
+    .skills {display: grid; grid-template-columns: 1fr 1fr; gap: 20px;}
+    .skill {background: #222; padding: 10px; border-radius: 5px;}
+    .skill span {display: block; margin-bottom: 5px;}
+    .skill-bar {background: #444; height: 10px; border-radius: 5px; overflow: hidden;}
+    .skill-bar div {height: 100%; background: #fbbf24;}
+
+    .videos {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;}
+    .videos iframe {width: 100%; aspect-ratio: 16/9; border: none; border-radius: 10px;}
+
+    .footer {text-align: center; padding: 20px; background: #111; color: #aaa;}
+    .socials a {color: #fbbf24; text-decoration: none; margin: 0 10px;}
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <img src="https://file-service.your-domain.com/file-NNcsMXyto1SVaYnmeV8N8u" alt="Ritesh Photo" />
+    <h1>Hi, I am <span>Ritesh</span></h1>
+    <p>Video Editor | Motion Graphics </p>
+  </header>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <h2>I'm Ritesh Patel</h2>
+    <p>Video Editor & Motion Designer based in India. I specialize in creating clean, professional, and eye-catching video content that helps brands connect with their audience.</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="service-card">Video Editing</div>
+      <div class="service-card">Motion Graphics</div>
+      <div class="service-card">Blender 3D</div>
+      <div class="service-card">Social Media Edits</div>
+      <div class="service-card">Graphic Design</div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill"><span>After Effects</span><div class="skill-bar"><div style="width: 85%;"></div></div></div>
+      <div class="skill"><span>Premiere Pro</span><div class="skill-bar"><div style="width: 80%;"></div></div></div>
+      <div class="skill"><span>Photoshop</span><div class="skill-bar"><div style="width: 70%;"></div></div></div>
+      <div class="skill"><span>Blender</span><div class="skill-bar"><div style="width: 60%;"></div></div></div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2 class="section-title">My Work</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/J7MJR2KSJ-4"></iframe>
+      <iframe src="https://www.youtube.com/embed/SfueCehQTIQ"></iframe>
+      <iframe src="https://www.youtube.com/embed/c8dbhDvx3Pc"></iframe>
+      <iframe src="https://www.youtube.com/embed/W67Hqwhx3cE"></iframe>
+      <iframe src="https://www.youtube.com/embed/T0s0WEi-Q4U"></iframe>
+      <iframe src="https://www.youtube.com/embed/rm0rqAhYqAQ"></iframe>
+      <iframe src="https://www.youtube.com/embed/7M3w5Y4FWe0"></iframe>
+      <iframe src="https://www.youtube.com/embed/T5__94BuzbI"></iframe>
+      <iframe src="https://www.youtube.com/embed/cMVxu4Nut2A"></iframe>
+      <iframe src="https://www.youtube.com/embed/YOocb6XOmak"></iframe>
+      <iframe src="https://www.youtube.com/embed/M26pALMfcbo"></iframe>
+      <iframe src="https://www.youtube.com/embed/6s5Pj9mUhp8"></iframe>
+      <iframe src="https://www.youtube.com/embed/k5W_qrFgnCw"></iframe>
+      <iframe src="https://www.youtube.com/embed/Z8YO6x4PT74"></iframe>
+      <iframe src="https://www.youtube.com/embed/7ScgYXVb7GA"></iframe>
+      <iframe src="https://www.youtube.com/embed/rxJEsT8pYZ0"></iframe>
+      <iframe src="https://www.youtube.com/embed/nMZAETZ-2sI"></iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="about">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: riteshhvfx@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/riteshpattell/" target="_blank" style="color:#fbbf24;">@riteshpattell</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/riteshhpattell/" target="_blank" style="color:#fbbf24;">View Profile</a></p>
+  </section>
+
+  <div class="footer">
+    © 2023 Ritesh Patel | All Rights Reserved
+    <div class="socials">
+      <a href="https://www.instagram.com/riteshpattell/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/riteshhpattell/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+</body>
+</html>
